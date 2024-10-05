@@ -34,7 +34,9 @@ const Login = () => {
   };
 
   return (
+    <>
     <Layout>
+      
       <div className="login-section">
         <form onSubmit={onSubmit} className="login-form">
           <h1 className="login-title">Login</h1>
@@ -79,6 +81,7 @@ const Login = () => {
         </form>
       </div>
     </Layout>
+    </>
   );
 };
 

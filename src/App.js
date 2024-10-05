@@ -10,6 +10,8 @@ import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { useSelector } from "react-redux";
+import "./styles/index.css";
+import MultiPlayer from "./pages/MultilPlayer";
   const PrivateRoutes = () =>{
     const { isAuth } = useSelector(state => state.auth)
     
@@ -30,12 +32,13 @@ const App = () => {
         <Route path="/" element={<Home />} />
 
         <Route element={<PrivateRoutes />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/multiplayer/clashofCode" element={<MultiPlayer />} />
         </Route>
 
         <Route element={<RestrictedRoutes />}>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
