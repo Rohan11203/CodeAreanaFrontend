@@ -18,7 +18,7 @@ const MultiPlayer = () => {
           <h1 className="text-3xl font-bold mb-2">CLASH OF CODE</h1>
           <p className="flex items-center">
             <Users className="mr-2" size={18} />
-            124,687 CodinGamers in the leaderboard
+            124,687 Players in the leaderboard
           </p>
         </div>
         <button className="absolute top-4 right-4 bg-yellow-500 text-black font-bold py-2 px-4 rounded">

@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import { useSelector } from "react-redux";
 import "./styles/index.css";
 import MultiPlayer from "./pages/MultilPlayer";
+import WorkInProgressError from "./components/WorkInProgressError";
   const PrivateRoutes = () =>{
     const { isAuth } = useSelector(state => state.auth)
     
@@ -39,6 +40,10 @@ const App = () => {
         <Route element={<RestrictedRoutes />}>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/challenges" element={<WorkInProgressError />} />
+          <Route path="/leaderboard" element={<WorkInProgressError />} />
+          <Route path="/community" element={<WorkInProgressError />} />
+          <Route path="/about" element={<WorkInProgressError />} />
         </Route>
       </Routes>
     </BrowserRouter>
