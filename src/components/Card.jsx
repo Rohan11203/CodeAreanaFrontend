@@ -1,5 +1,3 @@
-
-import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import gameImage from "../assets/backdashboard_img.jpeg";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +24,7 @@ export function ThreeDCardDemo({link,cardName}) {
           Hover over this card to unleash the power of CSS perspective
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img src={gameImage} alt="Image"></img>
+          <img src={gameImage} alt="gameimage"></img>
         </CardItem>
         <div className="flex justify-between items-center mt-20">
           <CardItem

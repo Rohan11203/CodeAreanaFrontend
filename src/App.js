@@ -40,10 +40,8 @@ const App = () => {
         <Route element={<RestrictedRoutes />}>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/challenges" element={<WorkInProgressError />} />
           <Route path="/leaderboard" element={<WorkInProgressError />} />
-          <Route path="/community" element={<WorkInProgressError />} />
-          <Route path="/about" element={<WorkInProgressError />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

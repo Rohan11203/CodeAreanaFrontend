@@ -6,7 +6,6 @@ import { unauthenticateUser } from '../redux/slices/authSlices'
 import  { ThreeDCardDemo } from '../components/Card'
 
 import "../styles/Dashboard.css"
-import { BackgroundBoxesDemo } from '../components/BackgroundBoxes'
 const Dashboard = () => {
   const dispatch = useDispatch()
   const [loading, setLoading] = useState(true)
