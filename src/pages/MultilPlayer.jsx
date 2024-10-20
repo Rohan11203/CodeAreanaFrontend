@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Users, Share2 } from 'lucide-react';
 import gameBackgroundimg from '../assets/background_img-games.jpg';
-import '../styles/Game.css';
 import Layout from '../components/Layout';
 
 const MultiPlayer = () => {
@@ -9,11 +8,11 @@ const MultiPlayer = () => {
 
   return (
    <Layout>
-     <div className="bg-gray-900 text-white font-sans">
+     <div className=" bg-gray-900 text-white font-sans">
       {/* Header */}
       <div className="relative">
-        <img src={gameBackgroundimg} alt="Clash of Code background" className="w-full h-48 object-cover background-img" />
-        <div className="absolute inset-0 bg-gradient-to-r  to-purple-900/80"></div>
+        <img src={gameBackgroundimg} alt="Clash of Code background" className="w-full h-80 object-cover background-img" />
+        
         <div className="absolute bottom-4 left-4">
           <h1 className="text-3xl font-bold mb-2">CLASH OF CODE</h1>
           <p className="flex items-center">

@@ -13,6 +13,8 @@ import { useSelector } from "react-redux";
 import "./styles/index.css";
 import MultiPlayer from "./pages/MultilPlayer";
 import WorkInProgressError from "./components/WorkInProgressError";
+import { SinglePlayer } from "./pages/SinglePlayer";
+import { ReactQuizCard } from "./components/ReactQuiz";
   const PrivateRoutes = () =>{
     const { isAuth } = useSelector(state => state.auth)
     
@@ -35,6 +37,8 @@ const App = () => {
         <Route element={<PrivateRoutes />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/multiplayer/clashofCode" element={<MultiPlayer />} />
+          <Route path="/singleplayer" element={<SinglePlayer />} />
+          <Route path="/singleplayer/react-quiz" element={<ReactQuizCard />}/>
         </Route>
 
         <Route element={<RestrictedRoutes />}>

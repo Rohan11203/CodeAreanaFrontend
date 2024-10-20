@@ -1,7 +1,7 @@
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import gameImage from "../assets/backdashboard_img.jpeg";
 import { useNavigate } from "react-router-dom";
-export function ThreeDCardDemo({link,cardName}) {
+export function GameCards({link,cardName}) {
   const navigate = new useNavigate();
 
   function handleClick(){

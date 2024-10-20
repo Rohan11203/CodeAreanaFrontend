@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
-import { Boxes } from "../components/ui/background-boxes";
+import { Boxes } from "./ui/background-boxes";
 import { cn } from "../lib/utlis";
 import { NavLink } from "react-router-dom";
-import homeImage from "../assets/people_img.jpg";
 
-export function BackgroundBoxesDemo() {
+export function LandingPage() {
   return (
     <div className="h-full relative w-full overflow-hidden bg-black flex flex-col items-center justify-center ">
       <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
@@ -26,9 +25,11 @@ export function BackgroundBoxesDemo() {
             <br />
             compete against others, and climb the ranks.
           </p>
+          <NavLink to="/dashboard">
           <button size="lg" className="bg-emerald-400 text-black font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-emerald-300 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-50">
   Enter the Arena
 </button>
+          </NavLink>
           <p className="mt-4 text-sm text-blue-200">
           Be among the first to battle in CodeArena, the ultimate coding battleground.
             <br />

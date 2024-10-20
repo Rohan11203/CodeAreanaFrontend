@@ -3,9 +3,7 @@ import { useDispatch } from 'react-redux'
 import { fetchProtectedInfo, OnLogout } from '../api/auth'
 import Layout from '../components/Layout'
 import { unauthenticateUser } from '../redux/slices/authSlices'
-import  { ThreeDCardDemo } from '../components/Card'
-
-import "../styles/Dashboard.css"
+import  { GameCards } from '../components/Card'
 const Dashboard = () => {
   const dispatch = useDispatch()
   const [loading, setLoading] = useState(true)
@@ -47,8 +45,8 @@ const Dashboard = () => {
     <Layout>
       
       <div className='flex justify-around'>
-        <ThreeDCardDemo cardName={"SinglePlayer"} link={"/singleplayer/nameofgame"}/>
-        <ThreeDCardDemo cardName={"MultiPlayer"} link={"/multiplayer/clashofCode"}/>
+        <GameCards cardName={"SinglePlayer"} link={"/singleplayer"}/>
+        <GameCards cardName={"MultiPlayer"} link={"/multiplayer/clashofCode"}/>
       </div>
       
         <h2>{protectedData}</h2>
