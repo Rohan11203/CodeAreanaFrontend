@@ -44,7 +44,7 @@ const Dashboard = () => {
   ) : (
     <Layout>
       
-      <div className='flex justify-around'>
+      <div className='flex justify-around bg-black'>
         <GameCards cardName={"SinglePlayer"} link={"/singleplayer"}/>
         <GameCards cardName={"MultiPlayer"} link={"/multiplayer/clashofCode"}/>
       </div>
